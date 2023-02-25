@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import videobg from "../assets/img/vid bg vid.mp4"
+import metaverse from "../assets/img/metaverse-115035.mp4"
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -48,7 +50,9 @@ export const Banner = () => {
   }
 
   return (
+    
     <section className="banner" id="home">
+    <video src={metaverse} autoPlay loop muted></video>
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
