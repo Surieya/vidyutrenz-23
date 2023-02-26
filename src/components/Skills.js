@@ -1,11 +1,18 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+// import meter1 from "../assets/img/meter1.svg";
+// import meter2 from "../assets/img/meter2.svg";
+// import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+import tech from "../assets/img/TECH-EVENTS.png"
+import nontech from "../assets/img/non-tech.png"
+import workshop from "../assets/img/workshops.png"
+import outdoor from "../assets/img/outdoor.png"
+
+
+// import arrow1 from "../assets/img/arrow1.svg";
+// import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+
 
 export const Skills = () => {
   const responsive = {
@@ -38,20 +45,20 @@ export const Skills = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={tech} alt="Image" size={34}/>
                                 <h5>Technical</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={nontech} alt="Image" />
                                 <h5>Non-Technical</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={workshop} alt="Image" />
                                 <h5>Workshops</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={outdoor} alt="Image" />
+                                <h5>Outdoor Events</h5>
                             </div>
                         </Carousel>
                     </div>
